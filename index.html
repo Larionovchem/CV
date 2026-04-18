@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Захар Ларионов — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">ZL.dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#experience">Опыт</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#achievements">Достижения</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li>
+          <a href="https://t.me/crazytulenich" class="nav-cta">Написать</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Открыт к предложениям
+        </div>
+        <h1>Захар Ларионов</h1>
+        <p class="hero-sub">
+          Frontend Developer · React / TypeScript · Студент МФТИ
+        </p>
+
+        <div class="hero-links">
+          <a href="mailto:larionov.za@phystech.edu" class="btn btn-primary">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,12 2,6" />
+            </svg>
+            Написать письмо
+          </a>
+          <a
+            href="https://github.com/Larionovchem"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://t.me/crazytulenich"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+              <path
+                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+              />
+            </svg>
+            Telegram
+          </a>
+        </div>
+
+        <div class="hero-contacts">
+          <a href="tel:+79019044042" class="contact-item">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.66A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.62-.61a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            +7 901 904 40 42
+          </a>
+          <span class="contact-item">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Москва, Россия
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-label">// about</div>
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              Фронтенд-разработчик с коммерческим опытом в продуктовом стартапе
+              - стал мидлом за полгода. Разрабатываю грамотные решения на
+              <strong>React + JavaScript</strong>.
+            </p>
+            <p>
+              Студент <strong>МФТИ</strong> — это значит иметь системное
+              мышление и высокую обучаемость.
+            </p>
+            <p>
+              Два года преподавал математику и химию школьникам, готовя их к
+              ВсОШ и ЕГЭ. Умею объяснять сложное просто и весело)
+            </p>
+            <div class="tools-list" style="margin-top: 1.5rem">
+              <span class="tool-chip">React</span>
+              <span class="tool-chip">JavaScript</span>
+              <span class="tool-chip">Redux / Zustand</span>
+              <span class="tool-chip">Git</span>
+              <span class="tool-chip">REST API</span>
+              <span class="tool-chip">SQL</span>
+              <span class="tool-chip">Python</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">1+</div>
+              <div class="stat-label">год коммерческого опыта</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">2</div>
+              <div class="stat-label">года преподавания</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">олимпиадных наград</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">5</div>
+              <div class="stat-label">курсов пройдено</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-label">// experience</div>
+        <h2 class="section-title">Опыт работы</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">
+                  Frontend Developer
+                  <span class="badge-level badge-mid">Middle</span>
+                </div>
+                <div class="tl-company">
+                  Ponimaiu.AI · продуктовая разработка
+                </div>
+              </div>
+              <span class="tl-date">Янв 2025 — Июн 2025</span>
+            </div>
+            <div class="tl-desc">
+              <ul>
+                <li>
+                  Самостоятельно проектировал и разрабатывал ключевые фичи
+                  продукта на React + JavaScript
+                </li>
+                <li>
+                  Разрабатывал микросервисы, пригодные для обывательского уровня
+                  - генератор правил для врачей
+                </li>
+                <li>Внедрял архитектуру на основе FSD</li>
+                <li>
+                  Проводил код-ревью, участвовал в технических обсуждениях
+                </li>
+                <li>
+                  Распределям задачи по команде, контактировал с другими
+                  командами для слаженности работы по технологиям
+                </li>
+              </ul>
+            </div>
+            <div class="tl-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Vue</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Code Review</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">
+                  Frontend Developer
+                  <span class="badge-level badge-jun">Junior</span>
+                </div>
+                <div class="tl-company">
+                  Ponimaiu.AI · продуктовая разработка
+                </div>
+              </div>
+              <span class="tl-date">Июн 2024 — Дек 2024</span>
+            </div>
+            <div class="tl-desc">
+              <ul>
+                <li>
+                  Разрабатывал UI-компоненты и страницы по дизайн-макетам в
+                  Figma
+                </li>
+
+                <li>
+                  Участвовал в agile-спринтах: задачи в Jira, ежедневные
+                  стендапы
+                </li>
+                <li>Работал с REST-API и запросами</li>
+              </ul>
+            </div>
+            <div class="tl-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">REST API</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Jira</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">Репетитор по математике и химии</div>
+                <div class="tl-company">Частная практика · офлайн</div>
+              </div>
+              <span class="tl-date">Сен 2022 — Авг 2024</span>
+            </div>
+            <div class="tl-desc">
+              <ul>
+                <li>
+                  Подготовил 15+ учеников к ВсОШ по химии и ЕГЭ (средний балл по
+                  математике — 87, по химии - 90+)
+                </li>
+                <li>
+                  Несколько учеников стали призёрами регионального этапа ВсОШ, а
+                  один из них призером
+                  <strong>заключительного этапа ВсОШ</strong>
+                </li>
+                <li>
+                  Развил навыки структурированного объяснения и работы в темпе
+                  ученика
+                </li>
+              </ul>
+            </div>
+            <div class="tl-tags">
+              <span class="tag">Математика</span>
+              <span class="tag">Химия</span>
+              <span class="tag">ВсОШ</span>
+              <span class="tag">ЕГЭ</span>
+              <span class="tag">Менторинг</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">// skills</div>
+        <h2 class="section-title">Навыки</h2>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <div class="skill-group-title">Frontend</div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">React / JSX</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="82"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="65"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">HTML / CSS / Tailwind</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="92"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Redux / RTK</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="60"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Общее</div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-w="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill green" data-w="72"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">SQL / Базы данных</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill green" data-w="65"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Алгоритмы и структуры данных</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill green" data-w="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">REST API / Async</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill green" data-w="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-top: 2.5rem">
+          <div class="skill-group-title" style="margin-bottom: 0.75rem">
+            Инструменты и технологии
+          </div>
+          <div class="tools-list">
+            <span class="tool-chip">React</span>
+            <span class="tool-chip">JavaScript</span>
+            <span class="tool-chip">Redux Toolkit</span>
+            <span class="tool-chip">React Router</span>
+            <span class="tool-chip">Tailwind CSS</span>
+            <span class="tool-chip">Vite</span>
+            <span class="tool-chip">Git / GitHub</span>
+            <span class="tool-chip">Figma</span>
+            <span class="tool-chip">Jira</span>
+            <span class="tool-chip">REST API</span>
+            <span class="tool-chip">SQL</span>
+            <span class="tool-chip">Python</span>
+            <span class="tool-chip">Node.js (basics)</span>
+            <span class="tool-chip">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- todo: может добавить переключатель тем когда-нибудь -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-label">// achievements</div>
+        <h2 class="section-title">Достижения и олимпиады</h2>
+        <div class="ach-grid reveal">
+          <div class="ach-card">
+            <div class="ach-icon">🥇</div>
+            <div class="ach-text">
+              <h4>Призер ВсОШ по химии</h4>
+              <p>ВсОШ, 2022 год</p>
+            </div>
+          </div>
+          <div class="ach-card">
+            <div class="ach-icon">🥈</div>
+            <div class="ach-text">
+              <h4>Призёр олимпиады «Физтех» по математике</h4>
+              <p>РСОШ, 2022 год</p>
+            </div>
+          </div>
+          <div class="ach-card">
+            <div class="ach-icon">🏆</div>
+            <div class="ach-text">
+              <h4>Призёр «Высшая проба» по экономике</h4>
+              <p>2022 год</p>
+            </div>
+          </div>
+          <div class="ach-card">
+            <div class="ach-icon">📐</div>
+            <div class="ach-text">
+              <h4>Многократный победитель регионального ВсОШ</h4>
+              <p>Математика и химия</p>
+            </div>
+          </div>
+          <div class="ach-card">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-text">
+              <h4>МФТИ — бакалавриат</h4>
+              <p>Один из самых сложных технических вузов России</p>
+            </div>
+          </div>
+          <div class="ach-card">
+            <div class="ach-icon">👥</div>
+            <div class="ach-text">
+              <h4>Член студсовета МФТИ</h4>
+              <p>Организатор мероприятий университетского уровня</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container">
+        <div class="section-label">// education &amp; courses</div>
+        <h2 class="section-title">Образование и курсы</h2>
+        <div class="courses-list reveal">
+          <div class="course-card">
+            <div class="course-icon algo">📊</div>
+            <div class="course-info">
+              <h4>Алгоритмы и структуры данных</h4>
+              <p>МФТИ</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-icon react">⚛️</div>
+            <div class="course-info">
+              <h4>Полный курс по React JS</h4>
+              <p>Redux / Router / Tailwind CSS · Stepik</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-icon js">⚡</div>
+            <div class="course-info">
+              <h4>JavaScript для опытных программистов</h4>
+              <p>Углублённый курс · Stepik</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-icon ts">🔷</div>
+            <div class="course-info">
+              <h4>TypeScript — подготовка к собеседованию</h4>
+              <p>Тренажёр · Stepik</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-icon db">🗃️</div>
+            <div class="course-info">
+              <h4>Основы баз данных</h4>
+              <p>МФТИ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">// projects</div>
+        <h2 class="section-title">Проекты</h2>
+        <div class="reveal">
+          <div class="project-card">
+            <div class="project-icon">🤖</div>
+            <div class="project-body">
+              <h3>ML Photo Analysis — Хакатон</h3>
+              <p>
+                Разработал фронтенд-часть хакатонного проекта: сайт на React,
+                принимающий изображения (.png) и отображающий результаты
+                ML-модели в виде таблицы (.csv). Связывал UI с бэкендом
+                ML-пайплайна, обеспечивал передачу данных и визуализацию
+                результатов. Проект вышел в продакшен в рамках другой команды.
+              </p>
+              <div class="tl-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">REST API</span>
+                <span class="tag">ML Integration</span>
+                <span class="tag">Hackathon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Захар Ларионов ·
+        <a href="mailto:larionov.za@phystech.edu">larionov.za@phystech.edu</a> ·
+        <a href="https://t.me/crazytulenich">@crazytulenich</a>
+      </p>
+      <p>Сделано с ❤️ и React в голове</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
