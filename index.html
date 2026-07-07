@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Захар Ларионов — Frontend Developer</title>
+    <title>Захар Ларионов — Frontend Developer / ML engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,7 +37,7 @@
         </div>
         <h1>Захар Ларионов</h1>
         <p class="hero-sub">
-          Frontend Developer · React / TypeScript · Студент МФТИ
+          Frontend Developer / ML Engineer · React / TypeScript · RAG / LLM
         </p>
 
         <div class="hero-links">
@@ -124,7 +124,9 @@
             <p>
               Фронтенд-разработчик с коммерческим опытом в продуктовом стартапе
               - стал мидлом за полгода. Разрабатываю грамотные решения на
-              <strong>React + JavaScript</strong>.
+              <strong>React + JavaScript</strong>. Также работал с ML/LLM:
+              RAG-пайплайнами, настройкой моделей и агентными системами с
+              суб-агентной архитектурой.
             </p>
             <p>
               Студент <strong>МФТИ</strong> — это значит иметь системное
@@ -141,6 +143,9 @@
               <span class="tool-chip">Git</span>
               <span class="tool-chip">REST API</span>
               <span class="tool-chip">SQL</span>
+              <span class="tool-chip">RAG</span>
+              <span class="tool-chip">LLM</span>
+              <span class="tool-chip">Agent Systems</span>
               <span class="tool-chip">Python</span>
             </div>
           </div>
@@ -176,14 +181,14 @@
             <div class="tl-header">
               <div>
                 <div class="tl-title">
-                  Frontend Developer
+                  Frontend Developer / ML Engineer
                   <span class="badge-level badge-mid">Middle</span>
                 </div>
                 <div class="tl-company">
                   Ponimaiu.AI · продуктовая разработка
                 </div>
               </div>
-              <span class="tl-date">Янв 2025 — Июн 2025</span>
+              <span class="tl-date">Янв 2025 — Март 2026</span>
             </div>
             <div class="tl-desc">
               <ul>
@@ -194,6 +199,21 @@
                 <li>
                   Разрабатывал микросервисы, пригодные для обывательского уровня
                   - генератор правил для врачей
+                </li>
+                <li>
+                  Работал с RAG-пайплайнами: настраивал retrieval/generation
+                  flow, подбирал контекст и улучшал качество ответов под
+                  продуктовые сценарии
+                </li>
+                <li>
+                  Настраивал и обучал ML/LLM-компоненты: готовил данные,
+                  проверял качество выдачи и адаптировал модели под задачи
+                  проекта
+                </li>
+                <li>
+                  Проектировал агентные и суб-агентные системы: распределял роли
+                  агентов, настраивал orchestration и контроль промежуточных
+                  результатов
                 </li>
                 <li>Внедрял архитектуру на основе FSD</li>
                 <li>
@@ -210,6 +230,10 @@
               <span class="tag">JavaScript</span>
               <span class="tag">Vue</span>
               <span class="tag">Vite</span>
+              <span class="tag">RAG</span>
+              <span class="tag">LLM</span>
+              <span class="tag">Agent Systems</span>
+              <span class="tag">ML Engineering</span>
               <span class="tag">Code Review</span>
             </div>
           </div>
@@ -364,6 +388,24 @@
             </div>
             <div class="skill-item">
               <div class="skill-top">
+                <span class="skill-name">RAG / LLM pipelines</span>
+                <span class="skill-pct">68%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill green" data-w="68"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Agent / Sub-agent systems</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill green" data-w="65"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
                 <span class="skill-name">SQL / Базы данных</span>
                 <span class="skill-pct">65%</span>
               </div>
@@ -399,7 +441,7 @@
           <div class="tools-list">
             <span class="tool-chip">React</span>
             <span class="tool-chip">JavaScript</span>
-            <span class="tool-chip">Redux Toolkit</span>
+            <span class="tool-chip">Redux / Zustand</span>
             <span class="tool-chip">React Router</span>
             <span class="tool-chip">Tailwind CSS</span>
             <span class="tool-chip">Vite</span>
@@ -409,6 +451,9 @@
             <span class="tool-chip">REST API</span>
             <span class="tool-chip">SQL</span>
             <span class="tool-chip">Python</span>
+            <span class="tool-chip">RAG</span>
+            <span class="tool-chip">LLM</span>
+            <span class="tool-chip">Agent Systems</span>
             <span class="tool-chip">Node.js (basics)</span>
             <span class="tool-chip">VS Code</span>
           </div>
@@ -517,6 +562,28 @@
         <div class="section-label">// projects</div>
         <h2 class="section-title">Проекты</h2>
         <div class="reveal">
+          <div class="project-card">
+            <div class="project-icon">₿</div>
+            <div class="project-body">
+              <h3>Crypto-dashboard</h3>
+              <p>
+                Разработал real-time дашборд для криптовалюты с возможностью
+                отслеживать состояние валюты. Подключил и настроил совместную
+                работу WebSocket(coinbase) и REST-API(CoinGecko). Также
+                использовался TypeScript. Для отрисовки динамического графика
+                использовал Tailwind CSS.
+              </p>
+              <div class="tl-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">REST API</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">CSS Tailwind</span>
+                <span class="tag">Zustand</span>
+                <span class="tag">Учебный проект</span>
+              </div>
+            </div>
+          </div>
           <div class="project-card">
             <div class="project-icon">🤖</div>
             <div class="project-body">
